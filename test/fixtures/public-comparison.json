@@ -1,0 +1,817 @@
+{
+  "ok": true,
+  "dataset": {
+    "id": "app-builder-code-and-data",
+    "version": "v1",
+    "data_as_of": "2026-10-13T13:58:14.626Z",
+    "released_at": "2026-10-13T18:16:23.457Z",
+    "snapshot_id": "sha256:87e497693cacf6d33966e1dbb81404a8cf880bccf9bbe8bcae824977b4376449",
+    "url": "https://saasthinktank.com/ct/no-code-ai-app-builders/",
+    "download_url": "https://saasthinktank.com/resources/releases/app-builder-code-and-data/v1/dataset.json",
+    "license_url": "https://saasthinktank.com/resources/releases/app-builder-code-and-data/v1/LICENSE.txt",
+    "citation": "SaaS Think Tank. App-builder code and data options, v1. Findings as of 13 October 2026. https://saasthinktank.com/research-data/app-builder-code-and-data/"
+  },
+  "coverage": {
+    "record_count": 16,
+    "product_count": 4,
+    "capability_count": 4,
+    "products": [
+      {
+        "id": "base44",
+        "name": "Base44"
+      },
+      {
+        "id": "bubble",
+        "name": "Bubble"
+      },
+      {
+        "id": "lovable",
+        "name": "Lovable"
+      },
+      {
+        "id": "replit",
+        "name": "Replit"
+      }
+    ],
+    "capabilities": [
+      {
+        "id": "live-fa0bc167dea71cc68dc3c5a5",
+        "question": "Bring your own backend",
+        "definition": "Point the app at a backend you already run."
+      },
+      {
+        "id": "live-23fc696adcb3a494892b6ab2",
+        "question": "Built-in database & data management",
+        "definition": "Store users and content in a real database you can see and query."
+      },
+      {
+        "id": "live-422da707fc95bc9941e612bb",
+        "question": "Export app source code",
+        "definition": "Download the app’s source files to work on outside the builder."
+      },
+      {
+        "id": "live-ccfc53a9e444044ae679765f",
+        "question": "GitHub sync",
+        "definition": "The generated code syncs to a repository you control."
+      }
+    ]
+  },
+  "limitations": [
+    "These are dated published findings, not new product checks. Original check dates remain with every answer.",
+    "Coverage is limited to four questions across Base44, Bubble, Lovable and Replit. It contains no prices or product rankings.",
+    "Unknown means the published finding does not establish an answer; it does not mean the feature is absent.",
+    "Code export does not establish that a complete app, saved data or login services can move. GitHub sync does not establish support for importing an existing repository."
+  ],
+  "products": [
+    {
+      "id": "base44",
+      "name": "Base44"
+    },
+    {
+      "id": "bubble",
+      "name": "Bubble"
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable"
+    },
+    {
+      "id": "replit",
+      "name": "Replit"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "live-fa0bc167dea71cc68dc3c5a5",
+      "question": "Bring your own backend",
+      "definition": "Point the app at a backend you already run.",
+      "findings": [
+        {
+          "record_id": "record-ac99d3b8e8cb35cf04bd2214ad3f3b149dffbe07b0d115e9757179b0ecdb30ec",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "base44",
+          "brand_name": "Base44",
+          "capability_id": "live-fa0bc167dea71cc68dc3c5a5",
+          "definition_version": "1",
+          "question": "Bring your own backend",
+          "definition": "Point the app at a backend you already run.",
+          "context_id": "context-65323032ac0e8cd6c53755b75673eaa6d26fce3d081b1254dc6723eeed90c79e",
+          "status": "no",
+          "unknown_reason": null,
+          "checked_at": "2026-09-04",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-bring-your-own-backend",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "The application’s own data layer",
+            "deployment": null,
+            "method": null,
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [],
+          "limitations": [
+            "The app’s data layer stays on Base44. Supabase access is read-only. Airtable and Sheets connections sync data without replacing the backend.",
+            "An external frontend can use Base44’s backend."
+          ],
+          "source_ids": [
+            "source-a858416e49dd1343f3bd32f958d822f0793a14c17a029d5d98dc0d75b9b4af4f"
+          ],
+          "sources": [
+            {
+              "source_id": "source-a858416e49dd1343f3bd32f958d822f0793a14c17a029d5d98dc0d75b9b4af4f",
+              "vendor": "Base44",
+              "date": "2026-09-04",
+              "url": "https://docs.base44.com/Integrations/connectors-catalog",
+              "title": "Base44: bring your own backend source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-d6aa57b1ba4407cf1e990e517dc88e763f467a61b6bd642726db0a3245f494ff",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "bubble",
+          "brand_name": "Bubble",
+          "capability_id": "live-fa0bc167dea71cc68dc3c5a5",
+          "definition_version": "1",
+          "question": "Bring your own backend",
+          "definition": "Point the app at a backend you already run.",
+          "context_id": "context-44d637ddafcaf75cda15b0935205319b46ab6aa737ba09944565b01db074eaee",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-12T11:12:15Z",
+          "review_due_at": "2026-12-10T16:55:49Z",
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-bring-your-own-backend",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "External backend connections",
+            "deployment": null,
+            "method": "API or backend connection",
+            "region": null,
+            "dependencies": [
+              "Separate backend account",
+              "External hosting",
+              "Authentication and connection setup"
+            ]
+          },
+          "conditions": [
+            "Connect a separate backend through an API. Xano is the published example."
+          ],
+          "limitations": [
+            "The SQL connector supports Postgres, MySQL and Microsoft SQL. It needs a connection string and tested queries. SELECT queries return at most 100 results."
+          ],
+          "source_ids": [
+            "source-6800839aac6bb6bca5f1844e736da496e5d3eb8a14074067320124d6104e3c8e",
+            "source-8ef818876833f4cb2e82dc7bb018bdf7c5251ebd6d819a0c04932461ad0d9d9a"
+          ],
+          "sources": [
+            {
+              "source_id": "source-6800839aac6bb6bca5f1844e736da496e5d3eb8a14074067320124d6104e3c8e",
+              "vendor": "Bubble",
+              "date": "2026-09-12T11:12:15Z",
+              "url": "https://bubble.io/blog/bubble-vs-xano-comparison/",
+              "title": "Bubble: bring your own backend source"
+            },
+            {
+              "source_id": "source-8ef818876833f4cb2e82dc7bb018bdf7c5251ebd6d819a0c04932461ad0d9d9a",
+              "vendor": "Bubble",
+              "date": "2026-09-12T11:12:15Z",
+              "url": "https://manual.bubble.io/help-guides/integrations/using-plugins/special-plugins",
+              "title": "Bubble: bring your own backend source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-91f3efddb3818e88b8c401e88f62287c36f293960ccf3d88779ad200b84231ad",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "lovable",
+          "brand_name": "Lovable",
+          "capability_id": "live-fa0bc167dea71cc68dc3c5a5",
+          "definition_version": "1",
+          "question": "Bring your own backend",
+          "definition": "Point the app at a backend you already run.",
+          "context_id": "context-f866ff62851f39ddb8981a4cce2cf766d2d7964b5fd4d3499b2f411c221f357d",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-01",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-bring-your-own-backend",
+          "context": {
+            "plan": "All plans",
+            "account_scope": null,
+            "product_scope": "External backend",
+            "deployment": null,
+            "method": "Supabase connection",
+            "region": null,
+            "dependencies": [
+              "Your own Supabase backend"
+            ]
+          },
+          "conditions": [
+            "Connect your own Supabase backend on any plan."
+          ],
+          "limitations": [],
+          "source_ids": [
+            "source-bef07e281d7382407efa26548f6e10fd6258e9dfdcebc6da653ba275124236b9"
+          ],
+          "sources": [
+            {
+              "source_id": "source-bef07e281d7382407efa26548f6e10fd6258e9dfdcebc6da653ba275124236b9",
+              "vendor": "Lovable",
+              "date": "2026-09-01",
+              "url": "https://docs.lovable.dev/integrations/supabase",
+              "title": "Lovable: bring your own backend source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-f7321a7adc06696e2617baf9d411eee1e43cd8b6a5571fd616845de51d753388",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "replit",
+          "brand_name": "Replit",
+          "capability_id": "live-fa0bc167dea71cc68dc3c5a5",
+          "definition_version": "1",
+          "question": "Bring your own backend",
+          "definition": "Point the app at a backend you already run.",
+          "context_id": "context-b981f76dbe0fdcf1ccb2f046d2b9b08e0db9a31fa7504f108b868624297abf01",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-04",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-bring-your-own-backend",
+          "context": {
+            "plan": "Core for third-party connectors",
+            "account_scope": null,
+            "product_scope": "External backend connectors",
+            "deployment": null,
+            "method": "Connector catalog",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Third-party connectors require Core. The connector catalog includes PostgreSQL."
+          ],
+          "limitations": [],
+          "source_ids": [
+            "source-c9e95c756e3648b20847b700d1794cac4511e7f38e1d11932f81ead19e97aef2"
+          ],
+          "sources": [
+            {
+              "source_id": "source-c9e95c756e3648b20847b700d1794cac4511e7f38e1d11932f81ead19e97aef2",
+              "vendor": "Replit",
+              "date": "2026-09-04",
+              "url": "https://docs.replit.com/chat/connectors",
+              "title": "Replit: bring your own backend source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "live-23fc696adcb3a494892b6ab2",
+      "question": "Built-in database & data management",
+      "definition": "Store users and content in a real database you can see and query.",
+      "findings": [
+        {
+          "record_id": "record-04368fc1cbe7e1a380c87ccd53627655f78078f125a58cd927bde252cb521844",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "base44",
+          "brand_name": "Base44",
+          "capability_id": "live-23fc696adcb3a494892b6ab2",
+          "definition_version": "1",
+          "question": "Built-in database & data management",
+          "definition": "Store users and content in a real database you can see and query.",
+          "context_id": "context-2c4ff8ab383923a0d9b0fc7184ccc15bac3f12cac560bb05e04337fdd48298b7",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-11T18:55:33Z",
+          "review_due_at": "2026-12-10T18:28:45Z",
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-built-in-database-data-management",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Application database",
+            "deployment": null,
+            "method": "SDK queries",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Query a MongoDB-compatible document database through the SDK."
+          ],
+          "limitations": [
+            "This is not a SQL database."
+          ],
+          "source_ids": [
+            "source-0c74e88508b64cb72d6c1a07bd93f7f943695dcc570c553600e523d66436bf9a",
+            "source-e7d91aeb25966fa72a610cc7afde5bb69d30034553ae481ba758165f4e4fd9f8"
+          ],
+          "sources": [
+            {
+              "source_id": "source-0c74e88508b64cb72d6c1a07bd93f7f943695dcc570c553600e523d66436bf9a",
+              "vendor": "Base44",
+              "date": "2026-09-11T18:55:33Z",
+              "url": "https://docs.base44.com/Getting-Started/Quick-start-guide",
+              "title": "Base44: built-in database & data management source"
+            },
+            {
+              "source_id": "source-e7d91aeb25966fa72a610cc7afde5bb69d30034553ae481ba758165f4e4fd9f8",
+              "vendor": "Base44",
+              "date": "2026-09-11T18:55:33Z",
+              "url": "https://docs.base44.com/developers/backend/overview/features",
+              "title": "Base44: built-in database & data management source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-76eab35470e5ccb5a3bab907cef2c4fafa3844745510f8f01d0ff11565c7f579",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "bubble",
+          "brand_name": "Bubble",
+          "capability_id": "live-23fc696adcb3a494892b6ab2",
+          "definition_version": "1",
+          "question": "Built-in database & data management",
+          "definition": "Store users and content in a real database you can see and query.",
+          "context_id": "context-39267e09f369ce81dd03e55584eb81016c164aded000a77e2879f351405afdee",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-06-16",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-built-in-database-data-management",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Application database",
+            "deployment": null,
+            "method": null,
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Store users and content in a database you can view and query."
+          ],
+          "limitations": [],
+          "source_ids": [
+            "source-bd506374722ced1b1f784f8a56254a74168ef5119a50824a07a4b6056025d0e3"
+          ],
+          "sources": [
+            {
+              "source_id": "source-bd506374722ced1b1f784f8a56254a74168ef5119a50824a07a4b6056025d0e3",
+              "vendor": "SaaS Think Tank",
+              "date": "2026-06-16",
+              "url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-built-in-database-data-management",
+              "title": "SaaS Think Tank: published database findings for Bubble and Lovable"
+            }
+          ]
+        },
+        {
+          "record_id": "record-583c34ddf9b54534a879c4b5cc2b8b816ba93ef576c1ebe0958e24ce2857935f",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "lovable",
+          "brand_name": "Lovable",
+          "capability_id": "live-23fc696adcb3a494892b6ab2",
+          "definition_version": "1",
+          "question": "Built-in database & data management",
+          "definition": "Store users and content in a real database you can see and query.",
+          "context_id": "context-39267e09f369ce81dd03e55584eb81016c164aded000a77e2879f351405afdee",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-06-16",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-built-in-database-data-management",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Application database",
+            "deployment": null,
+            "method": null,
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Store users and content in a database you can view and query."
+          ],
+          "limitations": [],
+          "source_ids": [
+            "source-bd506374722ced1b1f784f8a56254a74168ef5119a50824a07a4b6056025d0e3"
+          ],
+          "sources": [
+            {
+              "source_id": "source-bd506374722ced1b1f784f8a56254a74168ef5119a50824a07a4b6056025d0e3",
+              "vendor": "SaaS Think Tank",
+              "date": "2026-06-16",
+              "url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-built-in-database-data-management",
+              "title": "SaaS Think Tank: published database findings for Bubble and Lovable"
+            }
+          ]
+        },
+        {
+          "record_id": "record-74b73fdfc9481432cd8b3c57fdc05f3d373f20646c9e8eb7c526585958a208ed",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "replit",
+          "brand_name": "Replit",
+          "capability_id": "live-23fc696adcb3a494892b6ab2",
+          "definition_version": "1",
+          "question": "Built-in database & data management",
+          "definition": "Store users and content in a real database you can see and query.",
+          "context_id": "context-a4aa5ed8ee785102205fd10a3c0d4c1662d4eaf610433d68fcf355526c85f5ab",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-11T16:59:46Z",
+          "review_due_at": "2026-12-10T16:59:46Z",
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-built-in-database-data-management",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Application database",
+            "deployment": null,
+            "method": "Agent-assisted setup",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Ask Agent to connect the app’s data structure and storage code."
+          ],
+          "limitations": [
+            "Development and production databases are separate."
+          ],
+          "source_ids": [
+            "source-83ebf37da3480d39755c51d0cd80d14257c5152ad0e794d5c20634d8149733e1"
+          ],
+          "sources": [
+            {
+              "source_id": "source-83ebf37da3480d39755c51d0cd80d14257c5152ad0e794d5c20634d8149733e1",
+              "vendor": "Replit",
+              "date": "2026-09-11T16:59:46Z",
+              "url": "https://docs.replit.com/features/data-and-storage/sql-database",
+              "title": "Replit: built-in database & data management source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "live-422da707fc95bc9941e612bb",
+      "question": "Export app source code",
+      "definition": "Download the app’s source files to work on outside the builder.",
+      "findings": [
+        {
+          "record_id": "record-a59bbe174712101e4f659d8d250e5c45673860fb4d088afcc881d486c238bc59",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "base44",
+          "brand_name": "Base44",
+          "capability_id": "live-422da707fc95bc9941e612bb",
+          "definition_version": "1",
+          "question": "Export app source code",
+          "definition": "Download the app’s source files to work on outside the builder.",
+          "context_id": "context-97cc4fe67ed948a740e807f74b37456d3a10d636feeaa30faa6e5a4d144b5c03",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-07",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-export-app-source-code",
+          "context": {
+            "plan": "Builder",
+            "account_scope": null,
+            "product_scope": "Application source code",
+            "deployment": null,
+            "method": "Code export",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Export requires Builder."
+          ],
+          "limitations": [
+            "Exported code may still need Base44’s hosted database and sign-in services. Replacing those services needs development work."
+          ],
+          "source_ids": [
+            "source-983010ded5e0132a359bd243a0d83b62b538ff5009f8c6694cf634550b4b397a"
+          ],
+          "sources": [
+            {
+              "source_id": "source-983010ded5e0132a359bd243a0d83b62b538ff5009f8c6694cf634550b4b397a",
+              "vendor": "Base44",
+              "date": "2026-09-07",
+              "url": "https://docs.base44.com/Building-your-app/Mobile-experience",
+              "title": "Base44: export app source code source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-b9c9aec6e900b816c5d1db44308cc250a39ecefc00661370d65ea657c95cd069",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "bubble",
+          "brand_name": "Bubble",
+          "capability_id": "live-422da707fc95bc9941e612bb",
+          "definition_version": "1",
+          "question": "Export app source code",
+          "definition": "Download the app’s source files to work on outside the builder.",
+          "context_id": "context-5cb9fcaff6ac5da6acb4667cd869d2d6f2d79e69875522172da09cec5e07d7fd",
+          "status": "no",
+          "unknown_reason": null,
+          "checked_at": "2026-09-07",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-export-app-source-code",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Application source code",
+            "deployment": null,
+            "method": "Export",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [],
+          "limitations": [
+            "Records and app settings can be exported. Runnable app source code cannot."
+          ],
+          "source_ids": [
+            "source-049ed515a28534baa46b85b6dda754236cf4c88b54562a940e43e197e2e1f0a4"
+          ],
+          "sources": [
+            {
+              "source_id": "source-049ed515a28534baa46b85b6dda754236cf4c88b54562a940e43e197e2e1f0a4",
+              "vendor": "Bubble",
+              "date": "2026-09-07",
+              "url": "https://manual.bubble.io/account-and-marketplace/application-and-data-ownership",
+              "title": "Bubble: export app source code source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-fa87cf4d8c81beb6a566096fc28b4d4c9639eaab548377a17090a2b8e5c7b099",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "lovable",
+          "brand_name": "Lovable",
+          "capability_id": "live-422da707fc95bc9941e612bb",
+          "definition_version": "1",
+          "question": "Export app source code",
+          "definition": "Download the app’s source files to work on outside the builder.",
+          "context_id": "context-fe5dc891724af8f09738f587ff2b6d522ada967ff0264e71c6603ee41fbd747c",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-01",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-export-app-source-code",
+          "context": {
+            "plan": "All plans for GitHub sync; a paid plan for in-app download",
+            "account_scope": null,
+            "product_scope": "Project source code",
+            "deployment": null,
+            "method": "GitHub sync or in-app download",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Project code can be synced to GitHub on every plan. A paid plan is needed to download it inside Lovable."
+          ],
+          "limitations": [
+            "Third-party license restrictions still apply."
+          ],
+          "source_ids": [
+            "source-b459c09aee9da04d7bc7127651c55d25af6da9bf42563b7ebe6dc7708387539f"
+          ],
+          "sources": [
+            {
+              "source_id": "source-b459c09aee9da04d7bc7127651c55d25af6da9bf42563b7ebe6dc7708387539f",
+              "vendor": "Lovable",
+              "date": "2026-09-01",
+              "url": "https://docs.lovable.dev/tips-tricks/deployment-hosting-ownership",
+              "title": "Lovable: export app source code source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-7295cfb0f8f7b3b8704e9d2d08a47598fc4e4d689fefcdfcc143eb8202e6a46d",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "replit",
+          "brand_name": "Replit",
+          "capability_id": "live-422da707fc95bc9941e612bb",
+          "definition_version": "1",
+          "question": "Export app source code",
+          "definition": "Download the app’s source files to work on outside the builder.",
+          "context_id": "context-52493c72d652fe6010035b6c966c732af4624b6dd91700f30b945344add0b9f0",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-04",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-export-app-source-code",
+          "context": {
+            "plan": "Any plan",
+            "account_scope": null,
+            "product_scope": "Project source files",
+            "deployment": null,
+            "method": "ZIP download",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Download the project files as a ZIP on any plan."
+          ],
+          "limitations": [],
+          "source_ids": [
+            "source-03e40b9f635374793fa74c7d1937f4caaa6a98a995ae2f62da01eae2b73bbbcd"
+          ],
+          "sources": [
+            {
+              "source_id": "source-03e40b9f635374793fa74c7d1937f4caaa6a98a995ae2f62da01eae2b73bbbcd",
+              "vendor": "Replit",
+              "date": "2026-09-04",
+              "url": "https://docs.replit.com/teams/identity-and-access-management/manually-copy-projects",
+              "title": "Replit: export app source code source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "live-ccfc53a9e444044ae679765f",
+      "question": "GitHub sync",
+      "definition": "The generated code syncs to a repository you control.",
+      "findings": [
+        {
+          "record_id": "record-493b3a5756e365267279ceb9c695f4ab659aa9f2c377df2ee011216f259b8301",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "base44",
+          "brand_name": "Base44",
+          "capability_id": "live-ccfc53a9e444044ae679765f",
+          "definition_version": "1",
+          "question": "GitHub sync",
+          "definition": "The generated code syncs to a repository you control.",
+          "context_id": "context-006d7f86d9ac7e633f54d1f9b102178241d26b8d511632ada63651fc23e55db9",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-04",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-github-sync",
+          "context": {
+            "plan": "Builder",
+            "account_scope": null,
+            "product_scope": "Application code",
+            "deployment": null,
+            "method": "Two-way GitHub sync",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Two-way sync requires Builder. Changes sync automatically on the main branch."
+          ],
+          "limitations": [
+            "There is no manual push step.",
+            "This finding doesn't establish support for importing an existing repository."
+          ],
+          "source_ids": [
+            "source-6f120c3c4d8783017c3366c3ab4b77357997dc3e06964c5233d185203d9b3a57"
+          ],
+          "sources": [
+            {
+              "source_id": "source-6f120c3c4d8783017c3366c3ab4b77357997dc3e06964c5233d185203d9b3a57",
+              "vendor": "Base44",
+              "date": "2026-09-04",
+              "url": "https://docs.base44.com/developers/app-code/local-development/github",
+              "title": "Base44: github sync source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-8e3e97e439eacc398bb4b7af18b0cc9119d2e5f47a95e17006a4205bd0e39e1c",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "bubble",
+          "brand_name": "Bubble",
+          "capability_id": "live-ccfc53a9e444044ae679765f",
+          "definition_version": "1",
+          "question": "GitHub sync",
+          "definition": "The generated code syncs to a repository you control.",
+          "context_id": "context-ff254f9aa2e1d3b54202df52f0041760a3df2342dffb21dabcec2984405e0fe5",
+          "status": "unknown",
+          "unknown_reason": "not_confirmed",
+          "checked_at": "2026-09-11",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-github-sync",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Generated application source code",
+            "deployment": null,
+            "method": null,
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [],
+          "limitations": [
+            "The available GitHub instructions describe plugin code. They do not confirm sync for the generated app’s source.",
+            "This finding doesn't establish support for importing an existing repository."
+          ],
+          "source_ids": [],
+          "sources": []
+        },
+        {
+          "record_id": "record-dbb2f77a82f0963652f6259c556cb86f43239e123baeda26ae27682445e9760d",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "lovable",
+          "brand_name": "Lovable",
+          "capability_id": "live-ccfc53a9e444044ae679765f",
+          "definition_version": "1",
+          "question": "GitHub sync",
+          "definition": "The generated code syncs to a repository you control.",
+          "context_id": "context-8da867060aee83a127506aa4a9a074082907d91b0cce9b091d9e3103e8a8203f",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-01",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-github-sync",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Generated application source code",
+            "deployment": null,
+            "method": "Two-way GitHub sync",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Start by exporting the project to GitHub."
+          ],
+          "limitations": [
+            "Sync follows one selected branch at a time.",
+            "This finding doesn't establish support for importing an existing repository."
+          ],
+          "source_ids": [
+            "source-7b96f17e920587f19cbe1c2aa3d9255af6623f4fca9efdec8c667897332bd2a2"
+          ],
+          "sources": [
+            {
+              "source_id": "source-7b96f17e920587f19cbe1c2aa3d9255af6623f4fca9efdec8c667897332bd2a2",
+              "vendor": "Lovable",
+              "date": "2026-09-01",
+              "url": "https://docs.lovable.dev/integrations/git-integration",
+              "title": "Lovable: github sync source"
+            }
+          ]
+        },
+        {
+          "record_id": "record-b1ade2de5090cd7f59103b3cdba751855003b7fd0f362b8faa6a82eeae829280",
+          "category_id": "no-code-ai-app-builders",
+          "brand_id": "replit",
+          "brand_name": "Replit",
+          "capability_id": "live-ccfc53a9e444044ae679765f",
+          "definition_version": "1",
+          "question": "GitHub sync",
+          "definition": "The generated code syncs to a repository you control.",
+          "context_id": "context-16df0fe1c2091a81a2c556e70d0f9e6efe46c651904e762013a492bb3b36b55a",
+          "status": "yes",
+          "unknown_reason": null,
+          "checked_at": "2026-09-04",
+          "review_due_at": null,
+          "evidence_basis": "published_finding",
+          "article_url": "https://saasthinktank.com/ct/no-code-ai-app-builders/#row-github-sync",
+          "context": {
+            "plan": null,
+            "account_scope": null,
+            "product_scope": "Project code",
+            "deployment": null,
+            "method": "Git pane or command line",
+            "region": null,
+            "dependencies": null
+          },
+          "conditions": [
+            "Manage GitHub code through the Git pane or command line. File history is available."
+          ],
+          "limitations": [
+            "This finding doesn't establish support for importing an existing repository."
+          ],
+          "source_ids": [
+            "source-b0eff84331dcdb0e7e39e26b03f8bcfb93b6c161af5de34241068a83ec17db65"
+          ],
+          "sources": [
+            {
+              "source_id": "source-b0eff84331dcdb0e7e39e26b03f8bcfb93b6c161af5de34241068a83ec17db65",
+              "vendor": "Replit",
+              "date": "2026-09-04",
+              "url": "https://docs.replit.com/learn/projects-and-artifacts/version-control",
+              "title": "Replit: github sync source"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

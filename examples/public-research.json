@@ -1,0 +1,112 @@
+{
+  "name": "SaaS Think Tank - published research for a software shortlist",
+  "active": false,
+  "nodes": [
+    {
+      "id": "start",
+      "name": "Start public research",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "parameters": {},
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "research-0",
+      "name": "Search published findings",
+      "type": "n8n-nodes-saasthinktank.saasThinkTank",
+      "typeVersion": 1,
+      "parameters": {
+        "operation": "search",
+        "query": "Can Bubble and Lovable export source code?",
+        "products": [
+          "bubble",
+          "lovable"
+        ],
+        "options": {},
+        "maxFindings": 16
+      },
+      "position": [
+        300,
+        0
+      ]
+    },
+    {
+      "id": "research-1",
+      "name": "Get a published finding",
+      "type": "n8n-nodes-saasthinktank.saasThinkTank",
+      "typeVersion": 1,
+      "parameters": {
+        "operation": "get",
+        "recordId": "={{ $json.findings[0].record_id }}",
+        "options": {}
+      },
+      "position": [
+        600,
+        0
+      ]
+    },
+    {
+      "id": "research-2",
+      "name": "Compare covered products",
+      "type": "n8n-nodes-saasthinktank.saasThinkTank",
+      "typeVersion": 1,
+      "parameters": {
+        "operation": "compare",
+        "productsToCompare": [
+          "base44",
+          "bubble",
+          "lovable",
+          "replit"
+        ],
+        "questions": [],
+        "options": {}
+      },
+      "position": [
+        900,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Start public research": {
+      "main": [
+        [
+          {
+            "node": "Search published findings",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search published findings": {
+      "main": [
+        [
+          {
+            "node": "Get a published finding",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a published finding": {
+      "main": [
+        [
+          {
+            "node": "Compare covered products",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

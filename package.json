@@ -1,0 +1,30 @@
+{
+  "name": "n8n-nodes-saasthinktank",
+  "version": "0.1.0",
+  "description": "Search and compare published software research from SaaS Think Tank. Current edition: app-builder findings.",
+  "license": "MIT",
+  "homepage": "https://saasthinktank.com/ct/no-code-ai-app-builders/",
+  "keywords": ["n8n-community-node-package", "software-research", "saasthinktank"],
+  "author": { "name": "SaaS Think Tank", "email": "hello@saasthinktank.com" },
+  "repository": { "type": "git", "url": "https://github.com/koolkat91/n8n-nodes-saasthinktank.git" },
+  "scripts": {
+    "build": "n8n-node build && node scripts/copy-node-metadata.mjs",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "test": "node --test test/*.test.cjs",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": ["dist", "examples"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [],
+    "nodes": ["dist/nodes/SaasThinkTank/SaasThinkTank.node.js"]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "0.54.4",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": { "n8n-workflow": "*" }
+}

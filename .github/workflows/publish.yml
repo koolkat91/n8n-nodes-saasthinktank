@@ -1,0 +1,33 @@
+name: Publish reviewed release
+
+# Configure npm publishing and the npm-release environment before dispatching.
+# This workflow runs only when a maintainer explicitly starts a release.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    if: github.repository == 'koolkat91/n8n-nodes-saasthinktank' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: npm-release
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - run: npm test
+      - name: Publish with source provenance
+        run: npm publish --access public --provenance
+        env:
+          RELEASE_MODE: 'true'

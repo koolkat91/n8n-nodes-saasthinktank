@@ -1,0 +1,9 @@
+{
+  "node": "n8n-nodes-saasthinktank.saasThinkTank",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Analytics", "Miscellaneous"],
+  "resources": {
+    "primaryDocumentation": [{ "url": "https://saasthinktank.com/ct/no-code-ai-app-builders/" }]
+  }
+}
