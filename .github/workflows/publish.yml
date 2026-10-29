@@ -1,4 +1,4 @@
-name: Publish reviewed release
+name: Stage reviewed release
 
 # Configure npm publishing and the npm-release environment before dispatching.
 # This workflow runs only when a maintainer explicitly starts a release.
@@ -23,16 +23,18 @@ jobs:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
           cache: npm
+      - name: Use npm with staged publishing support
+        run: npm install --global npm@11.21.1
       - run: npm ci
       - run: npm run lint
       - run: npm run build
       - run: npm test
-      - name: Publish with source provenance
+      - name: Stage with source provenance
         run: |
           if [ -n "$NPM_TOKEN" ]; then
             npm config set //registry.npmjs.org/:_authToken "$NPM_TOKEN"
           fi
-          npm publish --access public --provenance
+          npm stage publish --access public --provenance
         env:
           RELEASE_MODE: 'true'
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

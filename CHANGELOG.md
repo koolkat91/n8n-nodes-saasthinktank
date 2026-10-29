@@ -7,6 +7,8 @@
 - Use the app-builder guide for the website and documentation links so visitors
   reach the full comparison. Keep research downloads and reuse terms intact.
 - Build and check releases in GitHub Actions so npm can show their source origin.
+- Stage the first release with that source proof before its authenticated npm
+  approval, allowing the initial publish without a permanent publishing key.
 
 Earlier development and test receipts are held in the private distribution
 project. This standalone public repository starts with the reviewed release.
