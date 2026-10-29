@@ -21,8 +21,11 @@ available to n8n users; it has no access to private research or website accounts
 
 ## Current status
 
-Version 0.1.0 is prepared for publication. All three operations passed tests in
-self-hosted n8n Community 2.45.5. npm publication and n8n verification are pending.
+Version 0.1.0 is published on npm with GitHub Actions source provenance. All three
+operations passed tests in self-hosted n8n Community 2.45.5, and the official
+published-package scanner passed. One real local AI agent tool call also passed.
+The n8n Creator Portal automated review is complete; its manual review is under
+way after submission of the installation and operation demo.
 
 ## Major decisions
 
@@ -38,12 +41,13 @@ publication. Each run depends on the public service being available.
 ## Known limitations
 
 The current edition contains 16 findings about four products and four questions.
-It does not supply current pricing or overall rankings. AI-agent answer quality
-has not been tested. n8n Cloud availability depends on n8n verification.
+It does not supply current pricing or overall rankings. The AI agent check covers
+one Bubble code-export question, not general answer accuracy. n8n Cloud
+availability depends on n8n verification, which is still pending.
 
 ## Future direction
 
-Complete publication and the n8n review. Add coverage only after its research is
+Await the n8n manual review. Add coverage only after its research is
 released publicly and the connector's stated scope can be updated accurately.
 
 ## Success criteria

@@ -15,7 +15,7 @@ No SaaS Think Tank account, API key or paid AI model is required.
 
 ## Installation
 
-Package name: `n8n-nodes-saasthinktank`.
+Package: [`n8n-nodes-saasthinktank`](https://www.npmjs.com/package/n8n-nodes-saasthinktank), version **0.1.0**.
 
 In a self-hosted n8n instance that allows community packages, install the package
 through **Settings → Community nodes**. An instance owner or administrator must
@@ -94,8 +94,10 @@ about every run or load level.
 
 The connector follows n8n’s community-node package format and can be selected as
 an AI agent tool through n8n’s standard “usable as tool” support. An AI agent
-requires its own model setup. Agent answer quality is not established by the
-manual research workflow.
+requires its own model setup. One local Ollama agent was also tested: it called
+Search Findings for Bubble's source-code export finding and preserved the
+original check date and vendor source in its answer. This single case does not
+establish general agent answer accuracy.
 
 Tested locally with self-hosted n8n Community **2.45.5**. All three actions,
 filtered comparisons, outside-coverage questions and missing/unsupported
