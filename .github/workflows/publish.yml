@@ -28,6 +28,11 @@ jobs:
       - run: npm run build
       - run: npm test
       - name: Publish with source provenance
-        run: npm publish --access public --provenance
+        run: |
+          if [ -n "$NPM_TOKEN" ]; then
+            npm config set //registry.npmjs.org/:_authToken "$NPM_TOKEN"
+          fi
+          npm publish --access public --provenance
         env:
           RELEASE_MODE: 'true'
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
